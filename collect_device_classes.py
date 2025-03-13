@@ -70,11 +70,14 @@ if __name__ == "__main__":
 
     # CSV 파일로 저장 (선택사항)
     import csv
+    import socket
 
-    with open("device_classes.csv", "w", newline="", encoding="utf-8") as f:
+    output_filename = f"device_classes_{ socket.gethostname() }.csv"
+    with open(output_filename, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(
             f, fieldnames=["GUID", "Name", "UpperFilters", "LowerFilters"]
         )
         writer.writeheader()
         writer.writerows(device_classes)
-    print("device_classes.csv 파일로 저장됨")
+    print(f"{output_filename} 파일로 저장됨")
+    input("\nEnter를 눌러 종료하세요...")

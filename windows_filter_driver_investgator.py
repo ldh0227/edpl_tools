@@ -1,13 +1,13 @@
-import winreg
-import subprocess
-import re
 import os
 import csv
-from ctypes import windll, wintypes
-import ctypes
+import re
 import socket
-import platform
+import subprocess
+import winreg
+import ctypes
+from ctypes import windll, wintypes
 import pefile
+
 from loguru import logger
 
 log_filename = "filter_driver_status.log"

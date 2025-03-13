@@ -1,1 +1,4 @@
 *.csv
+test01.py
+dist
+build
