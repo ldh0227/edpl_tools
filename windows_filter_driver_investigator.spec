@@ -2,7 +2,7 @@
 
 
 a = Analysis(
-    ['windows_filter_driver_investgator.py'],
+    ['windows_filter_driver_investigator.py'],
     pathex=[],
     binaries=[],
     datas=[],
@@ -21,7 +21,7 @@ exe = EXE(
     a.scripts,
     [],
     exclude_binaries=True,
-    name='windows_filter_driver_investgator',
+    name='windows_filter_driver_investigator',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
@@ -32,6 +32,7 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
+    version='windows_filter_driver_investgator.rc',
     icon=['trellix.ico'],
 )
 coll = COLLECT(
@@ -41,5 +42,5 @@ coll = COLLECT(
     strip=False,
     upx=True,
     upx_exclude=[],
-    name='windows_filter_driver_investgator',
+    name='windows_filter_driver_investigator',
 )

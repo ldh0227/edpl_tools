@@ -32,6 +32,7 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
+    version='collect_device_classes.rc',
     icon=['trellix.ico'],
 )
 coll = COLLECT(

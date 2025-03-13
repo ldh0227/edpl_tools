@@ -66,7 +66,7 @@ if __name__ == "__main__":
 
     # 결과 출력
     print(f"총 {len(device_classes)}개의 디바이스 클래스 발견:")
-    pprint.pprint(device_classes)
+    # pprint.pprint(device_classes)
 
     # CSV 파일로 저장 (선택사항)
     import csv

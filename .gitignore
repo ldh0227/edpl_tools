@@ -2,3 +2,5 @@
 test01.py
 dist
 build
+bin
+*.log
