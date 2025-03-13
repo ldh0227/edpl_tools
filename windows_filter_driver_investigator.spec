@@ -32,7 +32,7 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-    version='windows_filter_driver_investgator.rc',
+    version='windows_filter_driver_investigator.rc',
     icon=['trellix.ico'],
 )
 coll = COLLECT(
