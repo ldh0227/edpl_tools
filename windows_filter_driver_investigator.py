@@ -4,8 +4,6 @@ import re
 import socket
 import subprocess
 import winreg
-import ctypes
-from ctypes import windll, wintypes
 import pefile
 
 from loguru import logger
